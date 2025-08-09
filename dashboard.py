@@ -12,10 +12,10 @@ fl = st.file_uploader(":file_folder: Upload a file", type=(["CSV", "xlsx", "txt"
 if fl is not None:
     filename = fl.name
     st.write(filename)
-    df = pd.read_csv(filename, encoding= "ISO-8859-1")
+    df = pd.read_csv(filename, encoding="ISO-8859-1")
 else:
-    os.chdir(r"C:\Users\user\Downloads\streamlit project")
-    df = pd.read_csv("Superstore.csv", encoding= "ISO-8859-1")
+    file_path = os.path.join(os.path.dirname(__file__), "Superstore.csv")
+    df = pd.read_csv(file_path, encoding="ISO-8859-1")
 
 col1, col2 = st.columns((2))
 df["Order Date"] = pd.to_datetime(df["Order Date"])
@@ -158,4 +158,5 @@ with st.expander("View Data"):
 
 # Download orginal DataSet
 csv = df.to_csv(index = False).encode('utf-8')
+
 st.download_button('Download Data', data = csv, file_name = "Data.csv",mime = "text/csv")
