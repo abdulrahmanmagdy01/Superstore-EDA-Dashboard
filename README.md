@@ -33,23 +33,4 @@ Easily filter data by region, state, and city, visualize trends, and export insi
 
 ---
 
-## 📷 Dashboard Preview
 
-| Category Sales | Region Sales | Time Series |
-| --- | --- | --- |
-| ![Bar Chart](https://via.placeholder.com/200x150) | ![Pie Chart](https://via.placeholder.com/200x150) | ![Line Chart](https://via.placeholder.com/200x150) |
-
----
-
-## 📦 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/superstore-eda.git
-cd superstore-eda
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the dashboard
-streamlit run dashboard.py
