@@ -35,7 +35,7 @@ Easily filter data by region, state, and city, visualize trends, and export insi
 
 ## 📷 Dashboard Preview
 
-[Click to view]([https://superstore-eda-dashboard-aykftvcpkawkqsj5fevvsz.streamlit.app])
+ 🔗 [Click to view the Dashboard](https://superstore-eda-dashboard-aykftvcpkawkqsj5fevvsz.streamlit.app) |
 
 ---
 
